@@ -44,7 +44,7 @@ public class SpringSeecurityAppApplication {
                     .name("REFACTOR")
                     .build();
 
-            /* Create ROLES */
+            
             RoleEntity roleAdmin = RoleEntity.builder()
                     .roleEnum(RoleEnum.ADMIN)
                     .permissionList(Set.of(createPermission, readPermission, updatePermission, deletePermission))
@@ -65,7 +65,7 @@ public class SpringSeecurityAppApplication {
                     .permissionList(Set.of(createPermission, readPermission, updatePermission, deletePermission, refactorPermission))
                     .build();
 
-            /* CREATE USERS */
+            
             UserEntity userSantiago = UserEntity.builder()
                     .username("santiago")
                     .password("$2a$10$cMY29RPYoIHMJSuwRfoD3eQxU1J5Rww4VnNOUOAEPqCBshkNfrEf6")
